@@ -1,0 +1,8 @@
+<?php
+$_product = $block->getProduct();
+?>
+<div class="product-custom">
+    <?php if ($_product->getWebimpactoCustom()) :?>
+        <p><?= $block->escapeUrl($_product->getWebimpactoCustom()) ?> </p>
+    <?php endif;?>
+</div>

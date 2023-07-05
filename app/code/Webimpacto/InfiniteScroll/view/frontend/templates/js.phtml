@@ -1,0 +1,19 @@
+<script>
+    require([
+        'jquery',
+        'infiniteAjaxScroll'
+    ], function($, InfiniteAjaxScroll) {
+        'use strict';
+            $('body').addClass('infinitescroll');
+
+            $(document).ready(function () {
+                let ias = new InfiniteAjaxScroll('.products .list', {
+                    delay: "600",
+                    item: '.product-item',
+                    next: '.next',
+                    pagination: '.pages-items'
+                });
+            });
+            
+    });
+</script>
